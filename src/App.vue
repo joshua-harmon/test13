@@ -1,6 +1,6 @@
 <template>
 	<img alt="Vue logo" src="./assets/logo.png" />
-	<HelloWorld msg="Welcome to The Party Zone" />
+	<HelloWorld msg="Welcome to Vue" />
 </template>
 
 <script>

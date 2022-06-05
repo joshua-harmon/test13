@@ -6,7 +6,7 @@ module.exports = {
 	extends: [
 		"plugin:vue/vue3-recommended",
 		"eslint:recommended",
-		"plugin:prettier",
+		"plugin:prettier/recommended",
 	],
 	parserOptions: {
 		parser: "@babel/eslint-parser",
@@ -17,10 +17,7 @@ module.exports = {
 	},
 	overrides: [
 		{
-			files: [
-				"**/__tests__/*.{j,t}s?(x)",
-				"**/tests/unit/**/*.spec.{j,t}s?(x)",
-			],
+			files: ["**/__tests__/**/*.[jt]s?(x)", "**/?(*.)+(spec|test).[tj]s?(x)"],
 			env: {
 				jest: true,
 			},
