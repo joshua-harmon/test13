@@ -1,6 +1,6 @@
 /* eslint-disable prettier/prettier */
 <template>
-	<h1>I'm a Teapot</h1>
+	<h1 class="mt-5 text-6xl text-center">This is the App Component</h1>
 </template>
 
 <script>
