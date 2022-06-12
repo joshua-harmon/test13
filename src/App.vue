@@ -1,11 +1,15 @@
 /* eslint-disable prettier/prettier */
 <template>
-	<h1 class="mt-5 text-6xl text-center">This is the App Component</h1>
+	<main-nav />
 </template>
 
 <script>
+import MainNav from "@/components/MainNav.vue";
 export default {
 	name: "App",
+	components: {
+		MainNav,
+	},
 };
 </script>
 
