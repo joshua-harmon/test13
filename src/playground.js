@@ -1,31 +1,15 @@
-// const fruits = ["Apple", "Banana", "Orange"];
-// const vegetables = ["Carrot", "Cucumber", "Radish", "Tomato", "Pepper"];
-
-// console.log([...fruits, ...vegetables]);
-
-// const developer = {
-// salary: 100000,
-// experience: 4.5,
-// techStack: ["React", "Vue", "Angular", "HTML", "CSS", "JavaScript"],
-// lookingForWork: true,
-// doubleSalary() {
-// this.salary = this.salary * 2;
-// this.lookingForWork = false;
-// },
-// };
-
-// console.log("Developer: ", developer);
-// console.log("Salary: ", developer.salary);
-// console.log("Looking for work: ", developer.lookingForWork);
-
-// developer.doubleSalary();
-// console.log("Salary: ", developer.salary);
-// console.log("Looking for work: ", developer.lookingForWork);
-
 export const evenOrOdd = (number) => {
 	if (number % 2 === 0) {
 		return "even";
 	} else {
 		return "odd";
 	}
+};
+
+export const multiply = (num1, num2) => {
+	let total = 0;
+	for (let i = 0; i < num1; i++) {
+		total += num2;
+	}
+	return total;
 };
