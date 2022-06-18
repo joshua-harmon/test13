@@ -8,7 +8,7 @@
 					company
 				}}</a>
 				<nav class="h-full ml-12">
-					<uL class="flex h-full p-0 m-0 list-none">
+					<ul class="flex h-full p-0 m-0 list-none">
 						<li
 							v-for="menuItem in menuItems"
 							:key="menuItem"
@@ -18,7 +18,7 @@
 								menuItem
 							}}</a>
 						</li>
-					</uL>
+					</ul>
 				</nav>
 			</div>
 		</div>
