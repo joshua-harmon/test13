@@ -9,23 +9,14 @@
 				}}</a>
 				<nav class="h-full ml-12">
 					<uL class="flex h-full p-0 m-0 list-none">
-						<li class="h-full">
-							<a href="" class="flex items-center h-full py-2.5">Teams</a>
-						</li>
-						<li class="h-full ml-9">
-							<a href="" class="flex items-center h-full py-2.5">Locations</a>
-						</li>
-						<li class="h-full ml-9">
-							<a href="" class="flex items-center h-full py-2.5">Benefits</a>
-						</li>
-						<li class="h-full ml-9">
-							<a href="" class="flex items-center h-full py-2.5">Jobs</a>
-						</li>
-						<li class="h-full ml-9">
-							<a href="" class="flex items-center h-full py-2.5">Students</a>
-						</li>
-						<li class="h-full ml-9">
-							<a href="" class="flex items-center h-full py-2.5">How we hire</a>
+						<li
+							v-for="menuItem in menuItems"
+							:key="menuItem"
+							class="h-full ml-9 first:ml-0"
+						>
+							<a href="" class="flex items-center h-full py-2.5">{{
+								menuItem
+							}}</a>
 						</li>
 					</uL>
 				</nav>
@@ -41,6 +32,14 @@ export default {
 		return {
 			company: "Boogle Careers",
 			url: "https://careers.google.com",
+			menuItems: [
+				"Teams",
+				"Locations",
+				"Culture",
+				"Jobs",
+				"How we hire",
+				"Students",
+			],
 		};
 	},
 };
