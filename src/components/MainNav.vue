@@ -21,6 +21,7 @@
 						</li>
 					</ul>
 				</nav>
+				<profile-image />
 				<div class="flex items-center h-full ml-auto">
 					<action-button></action-button>
 				</div>
@@ -31,11 +32,13 @@
 
 <script>
 import ActionButton from "@/components/ActionButton.vue";
+import ProfileImage from "@/components/ProfileImage.vue";
 
 export default {
 	name: "MainNav",
 	components: {
 		ActionButton,
+		ProfileImage,
 	},
 	data() {
 		return {
