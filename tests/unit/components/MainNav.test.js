@@ -41,7 +41,7 @@ describe("MainNav", () => {
 	});
 
 	describe("When user logs in", () => {
-		it("prompts user to sign in", () => {
+		it("displays user profile picture", () => {
 			const wrapper = mount(MainNav, {
 				data() {
 					return {
