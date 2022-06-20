@@ -33,14 +33,14 @@ describe("MainNav", () => {
 					};
 				},
 			});
-			const loginButton = wrapper.findComponent({ name: "ActionButton" });
-			const profileImage = wrapper.findComponent({ name: "ProfileImage" });
+			const loginButton = wrapper.find("[data-test='login-button']");
+			const profileImage = wrapper.find("[data-test='profile-image']");
 			expect(loginButton.exists()).toBe(true);
 			expect(profileImage.exists()).toBe(false);
 		});
 	});
 
-	describe("Whe user logs in", () => {
+	describe("When user logs in", () => {
 		it("prompts user to sign in", () => {
 			const wrapper = mount(MainNav, {
 				data() {
@@ -49,8 +49,8 @@ describe("MainNav", () => {
 					};
 				},
 			});
-			const loginButton = wrapper.findComponent({ name: "ActionButton" });
-			const profileImage = wrapper.findComponent({ name: "ProfileImage" });
+			const loginButton = wrapper.find("[data-test='login-button']");
+			const profileImage = wrapper.find("[data-test='profile-image']");
 			expect(loginButton.exists()).toBe(false);
 			expect(profileImage.exists()).toBe(true);
 		});
