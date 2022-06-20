@@ -21,9 +21,9 @@
 						</li>
 					</ul>
 				</nav>
-				<profile-image />
 				<div class="flex items-center h-full ml-auto">
-					<action-button></action-button>
+					<profile-image v-if="isLoggedIn" />
+					<action-button v-else></action-button>
 				</div>
 			</div>
 		</div>
@@ -52,6 +52,7 @@ export default {
 				"How we hire",
 				"Students",
 			],
+			isLoggedIn: false,
 		};
 	},
 };
