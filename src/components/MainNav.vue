@@ -27,7 +27,7 @@
 						v-else
 						data-test="login-button"
 						text="Sign In"
-						:is-primary="true"
+						type="primary"
 						@click="loginUser"
 					/>
 				</div>
