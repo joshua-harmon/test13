@@ -7,7 +7,18 @@
 <script>
 export default {
 	name: "ActionButton",
-	props: ["text", "type"],
+	props: {
+		text: {
+			type: String,
+			require: true,
+			default: "Sign In",
+		},
+		type: {
+			type: String,
+			require: false,
+			default: "primary",
+		},
+	},
 	data() {
 		return {};
 	},
